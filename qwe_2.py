@@ -8,19 +8,23 @@ for i in range(4):
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     time.sleep(4)
 
-
+game_detail = driver.find_elements_by_class_name('RZEgze')
 top_game_details = driver.find_elements_by_class_name('bQVA0c')
 price_list = driver.find_elements_by_class_name('zYPPle')
 discounted_price_list = driver.find_elements_by_class_name('SUZt4c djCuy')
 
-
+games = []
 
 num = 1
-for game in top_game_details:
-    a = game.text
-for price in price_list:
-    b = price.text
-    print(str(num), '.', a, b, '\n', '\n')
-    num = num+1
+for game in game_detail:
+    a=game.text
+    games.append(a)
+    if '0₩' in a:
+        print(num, a)
+        num = num + 1
+#for price in discounted_price_list:
+#    b = price.text
+#    print(b)
+#    num = num+1
 
 driver.quit()
