@@ -1,4 +1,6 @@
 from selenium import webdriver
+from bs4 import BeautifulSoup
+
 import time
 
 driver = webdriver.Chrome('C:/chromedriver')
@@ -8,7 +10,7 @@ for i in range(4):
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     time.sleep(4)
 
-game_detail = driver.find_elements_by_class_name('RZEgze')
+game_detail = driver.find_elements_by_class_name('Vpfmgd')
 top_game_details = driver.find_elements_by_class_name('bQVA0c')
 price_list = driver.find_elements_by_class_name('zYPPle')
 discounted_price_list = driver.find_elements_by_class_name('SUZt4c djCuy')
@@ -18,6 +20,7 @@ games = []
 num = 1
 for game in game_detail:
     a=game.text
+    b=game.src
     games.append(a)
     if '0₩' in a:
         print(num, a)
