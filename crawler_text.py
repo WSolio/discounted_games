@@ -17,14 +17,14 @@ discounted_price_list = driver.find_elements_by_class_name('SUZt4c djCuy')
 
 games = []
 
-num = 1
 for game in game_detail:
     a=game.text
     b=game.src
     games.append(a)
     if '0₩' in a:
         print(num, a)
-        num = num + 1
+
+
 #for price in discounted_price_list:
 #    b = price.text
 #    print(b)
