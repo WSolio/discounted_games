@@ -10,8 +10,8 @@ for i in range(4):
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     time.sleep(4)
 
-#game_titles = driver.find_elements_by_class_name('WsMG1c') ###게임 제목
-#game_publishers = driver.find_elements_by_class_name('KoLSrc') ###게임 제작사
+game_titles = driver.find_elements_by_class_name('WsMG1c') ###게임 제목
+game_publishers = driver.find_elements_by_class_name('KoLSrc') ###게임 제작사
 game_origin_prices = driver.find_elements_by_class_name('SUZt4c') ###게임 원래 가격 <---이 값이 존재하는 게임은 할인중인 게임
 game_saling_prices = driver.find_elements_by_class_name('VfPpfd') ###게임 세일 가격 <---할인되거나, 일반적인 가격
 game_prices = driver.find_elements_by_class_name('LCATme') ###게임 종합 가격 <---둘 다 포함되는 영역
@@ -24,15 +24,10 @@ game_detail = driver.find_elements_by_class_name('VfPpfd')
 print(game_detail)
 
 games = []
-#titles = []
-#prices = []
 
-games=[]
 
 #우선 origin price가 존재하는 영역의 제목, 제작사, 판매가격을 리스트에 넣어야 하는데.
 #그 방법을 모르겠음....
-
-
 num = 1
 for game_price in game_prices:
     a = game_price.text
@@ -47,23 +42,15 @@ if a == b + c:
     print(games)
 
 
-
-
-#num = 1
-#for game in game_detail:
-#    a = game.text
-#    games.append(a)
-#    print(num, a)
-#    num = num + 1
-
-
+#for game_title in game_titles:
+#    title = game_title.text
+#    games.append(title)
 
 ################### 제작사 한개만 리스팅 ####################
-#num = 1
-#for game in game_detail:
-#    a = game.text
+#for game_publisher in game_publishers:
+#    publisher = game_publisher.text
 #    if num % 2 == 1:
-#        games.append(a)
+#        games.append(publisher)
 #        print(round(num * 0.5), a)
 #    num = num + 1
 

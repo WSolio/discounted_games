@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd987f84-3487-4978-b137-b0e8e03096be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawler_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_text.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -197,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572065870999</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="#우선 origin price가 존재하는 영역의 제목, 제작사, 판매가격을 리스트에 넣어야 하는데.&#10;#그 방법을 모르겠음....">
+      <created>1572195352600</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572195352600</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,7 +220,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="qwe2파일에서&#10;&#10;구글 플레이 유료 게임중에서 할인중인 게임 텍스트만 크롤링 하는 코드짜기 성공" />
     <MESSAGE value="쓸데없는 파일 정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="쓸데없는 파일 정리" />
+    <MESSAGE value="#우선 origin price가 존재하는 영역의 제목, 제작사, 판매가격을 리스트에 넣어야 하는데.&#10;#그 방법을 모르겠음...." />
+    <option name="LAST_COMMIT_MESSAGE" value="#우선 origin price가 존재하는 영역의 제목, 제작사, 판매가격을 리스트에 넣어야 하는데.&#10;#그 방법을 모르겠음...." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
