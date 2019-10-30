@@ -56,9 +56,9 @@ for game_price in game_prices:
     price = game_price.text
     prices.append(price)
 
-for i,j,k in zip(titles, price_salings, prices):
-    print(i,j, k)
 
+#for i,j,k in zip(titles, price_salings, prices):
+#    print(i,j, k)
 
 
 

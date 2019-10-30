@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd987f84-3487-4978-b137-b0e8e03096be" name="Default Changelist" comment="#우선 origin price가 존재하는 영역의 제목, 제작사, 판매가격만을 리스트에 넣어야 하는데 그 방법을 모르겠음....">
+    <list default="true" id="fd987f84-3487-4978-b137-b0e8e03096be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/text_crawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawler_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler_text.py" afterDir="false" />
     </list>
@@ -52,28 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.crawler_text">
-    <configuration name="ㅁ02" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="App_recommandetion" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ㅁ02.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.text_crawler">
     <configuration name="crawler_img01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="App_recommandetion" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,6 +121,9 @@
       <module name="App_recommandetion" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -155,13 +138,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="text_crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="App_recommandetion" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/text_crawler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.text_crawler" />
         <item itemvalue="Python.crawler_text" />
         <item itemvalue="Python.crawler_img02" />
         <item itemvalue="Python.crawler_img03" />
         <item itemvalue="Python.crawler_img01" />
-        <item itemvalue="Python.crawler_text" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572195798790</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="#우선 origin price가 존재하는 영역의 제목, 제작사, 판매가격만을 리스트에 넣어야 하는데 그 방법을 모르겠음....">
+      <created>1572368703479</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572368703479</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
