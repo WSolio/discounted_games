@@ -124,7 +124,7 @@ for i in range(len(titles)):
     work_sheet.cell(row=i+2, column=1, value=i+1)
     work_sheet.cell(row=i+2, column=2, value=titles[i])
     work_sheet.cell(row=i+2, column=3, value=publishers[i])
-    work_sheet.cell(row=i+2, column=4, value= o_prices[i] + '에서'+ s_prices[i] +'로 할인 중!')
+    work_sheet.cell(row=i+2, column=4, value= o_prices[i] + ' 에서 '+ s_prices[i] +' 로 할인 중!')
     work_sheet.cell(row=i+2, column=5, value=g_links[i])
     i = i +1
 

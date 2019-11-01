@@ -233,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572368703479</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="#링크복사 완료 // 엑셀저장 끝">
+      <created>1572612893401</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572612893401</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,7 +261,8 @@
     <MESSAGE value="쓸데없는 파일 정리" />
     <MESSAGE value="#우선 origin price가 존재하는 영역의 제목, 제작사, 판매가격을 리스트에 넣어야 하는데.&#10;#그 방법을 모르겠음...." />
     <MESSAGE value="#우선 origin price가 존재하는 영역의 제목, 제작사, 판매가격만을 리스트에 넣어야 하는데 그 방법을 모르겠음...." />
-    <option name="LAST_COMMIT_MESSAGE" value="#우선 origin price가 존재하는 영역의 제목, 제작사, 판매가격만을 리스트에 넣어야 하는데 그 방법을 모르겠음...." />
+    <MESSAGE value="#링크복사 완료 // 엑셀저장 끝" />
+    <option name="LAST_COMMIT_MESSAGE" value="#링크복사 완료 // 엑셀저장 끝" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
