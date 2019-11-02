@@ -2,6 +2,12 @@ from selenium import webdriver
 import time
 import datetime
 from openpyxl import load_workbook
+from flask import Flask, render_template, jsonify, request
+app = Flask(__name__)
+
+from pymongo import MongoClient
+client = MongoClient('localhost', 27017)
+db = client.playgamedb
 
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
@@ -89,41 +95,22 @@ for n in range(200):
         games.append(games1[n] + [e[m]])
         m = m + 1
 
-
-titles = []
-publishers = []
-o_prices = []
-s_prices = []
-g_links = []
-sumnails = []
-
-
-n=0
-for n in range(len(games)):
-    titles.append(games[n][0])
-    publishers.append(games[n][1])
-    o_prices.append(games[n][6])
-    s_prices.append(games[n][2])
-    g_links.append(games[n][4])
-    sumnails.append(games[n][5])
-    n=n+1
-
 work_book = load_workbook('prac01.xlsx')
 work_sheet = work_book['prac']
 
-
-for i in range(len(titles)):
+i=0
+for i in range(len(games)):
     work_sheet.cell(row=1, column=1, value='날두하자')
     work_sheet.cell(row=1, column=2, value='제목')
     work_sheet.cell(row=1, column=3, value='제작사')
     work_sheet.cell(row=1, column=4, value='가격정보')
     work_sheet.cell(row=1, column=5, value='링크')
     work_sheet.cell(row=i+2, column=1, value=i+1)
-    work_sheet.cell(row=i+2, column=2, value=titles[i])
-    work_sheet.cell(row=i+2, column=3, valuue=g_links[i])
-    work_sheet.cell(row=i+2, column=6, vae=publishers[i])
-    work_sheet.cell(row=i+2, column=4, value= o_prices[i] + ' 에서 '+ s_prices[i] +' 로 할인 중!')
-    work_sheet.cell(row=i+2, column=5, vallue=sumnails[i])
+    work_sheet.cell(row=i+2, column=2, value=games[i][0])
+    work_sheet.cell(row=i+2, column=3, value=games[i][1])
+    work_sheet.cell(row=i+2, column=4, value=games[i][6] + ' 에서 '+ games[i][2] +' 로 할인 중!')
+    work_sheet.cell(row=i+2, column=5, value=games[i][4])
+    work_sheet.cell(row=i+2, column=6, value=games[i][5])
     i = i +1
 
 work_book.save('오늘의 게임 날두 리스트.xlsx')
